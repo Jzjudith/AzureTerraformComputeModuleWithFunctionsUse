@@ -1,1 +1,1 @@
-# https-github.com-Jzjudith-AzureTerraformComputeModuleWithFunctions-Use
+# AzureTerraformComputeModuleWithFunctionsUse
