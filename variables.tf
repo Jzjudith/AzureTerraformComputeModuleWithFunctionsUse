@@ -18,33 +18,21 @@ variable "virtual_network_name" {
 
 variable "vnet_cidr_space" {
   type        = list(string)
-  description = "The address space that is used the virtual network. You can supply more than one address space."
+  description = "The address space that is used by the virtual network."
   default     = ["10.0.0.0/16"]
 }
 
-variable "subnet_name" {
-  type        = string
-  description = "The name of the subnet."
-  default     = "func-compute-subnet"
-}
 
 variable "subnets" {
   type        = map(any)
   description = "The address prefixes to use for the each subnet."
   default = {
-    private_subnet = {
-      name             = "private_subnet"
-      address_prefixes = "10.0.1.0/24"
-    }
-    public_subnet = {
-      name             = "public_subnet"
-      address_prefixes = "10.0.2.0/24"
-    }
+    private_subnet = ["10.0.1.0/24"]
+
+    public_subnet = ["10.0.2.0/24"]
 
   }
 }
-
-
 
 variable "public_ip_name" {
   type        = string
@@ -52,6 +40,9 @@ variable "public_ip_name" {
   default     = "compute-pip"
 }
 
+variable "compute_count" {
+  default = 2
+}
 
 variable "network_interface_name" {
   type        = string
