@@ -1,3 +1,6 @@
+## Azure Terraform Compute Module With Function Use.
+This configuration uses the module at Github: ![AzureTerraformComputeModuleWithFunctions](https://github.com/Jzjudith/AzureTerraformComputeModuleWithFunctions?ref=main") to create a specific number of resource based on terraform count meta-argument.
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
@@ -39,5 +42,8 @@ No resources.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_virtual_network_name"></a> [virtual\_network\_name](#output\_virtual\_network\_name) | n/a |
+| <a name="output_network_interface_ids"></a> [network\_interface\_ids](#output\_network\_interface\_ids) | The id of the network interface |
+| <a name="output_public_ip_address"></a> [public\_ip\_address](#output\_public\_ip\_address) | The public ip address |
+| <a name="output_public_ip_address_id"></a> [public\_ip\_address\_id](#output\_public\_ip\_address\_id) | The id of the public ip address |
+| <a name="output_subnet_ids"></a> [subnet\_ids](#output\_subnet\_ids) | The ids of the subnet |
 <!-- END_TF_DOCS -->
