@@ -1,3 +1,4 @@
+
 output "public_ip_address" {
   description = "The public ip address"
   value       = "${module.azurermcompute.public_ip_address}"
@@ -17,4 +18,5 @@ output "network_interface_ids" {
   description = "The id of the network interface"
   value       = "${module.azurermcompute.network_interface_ids}"
 }
+
 
